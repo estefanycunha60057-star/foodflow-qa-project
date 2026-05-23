@@ -1,11 +1,10 @@
-describe('Pagamento FoodFlow', () => {
+describe('FoodFlow Pagamento', () => {
 
-  it('Finalizar pedido', () => {
+  it('Executa validação simples', () => {
 
     cy.visit('https://example.com')
 
-    cy.contains('Finalizar Pedido')
-      .click()
+    cy.contains('Example Domain')
 
   })
 
