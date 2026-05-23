@@ -1,0 +1,11 @@
+{
+  "name": "foodflow-qa-project",
+  "version": "1.0.0",
+  "description": "Projeto QA FoodFlow",
+  "scripts": {
+    "test": "cypress run"
+  },
+  "devDependencies": {
+    "cypress": "^13.0.0"
+  }
+}
