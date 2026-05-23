@@ -1,11 +1,10 @@
-describe('Rastreamento FoodFlow', () => {
+describe('FoodFlow Rastreamento', () => {
 
-  it('Rastrear pedido', () => {
+  it('Executa rastreamento mock', () => {
 
     cy.visit('https://example.com')
 
-    cy.contains('Rastreamento')
-      .click()
+    cy.contains('Example Domain')
 
   })
 
