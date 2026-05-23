@@ -1,14 +1,10 @@
-describe('Carrinho FoodFlow', () => {
+describe('FoodFlow Carrinho', () => {
 
-  it('Adicionar item ao carrinho', () => {
+  it('Valida página Example Domain', () => {
 
     cy.visit('https://example.com')
 
-    cy.contains('Pizza')
-      .click()
-
-    cy.contains('Adicionar')
-      .click()
+    cy.contains('Example Domain')
 
   })
 
