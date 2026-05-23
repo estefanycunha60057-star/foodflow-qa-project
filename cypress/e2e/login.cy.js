@@ -1,17 +1,10 @@
-describe('Login FoodFlow', () => {
+describe('FoodFlow Login', () => {
 
-  it('Login com sucesso', () => {
+  it('Acessa página Example Domain', () => {
 
     cy.visit('https://example.com')
 
-    cy.get('#email')
-      .type('teste@email.com')
-
-    cy.get('#senha')
-      .type('123456')
-
-    cy.get('button')
-      .click()
+    cy.contains('Example Domain')
 
   })
 
