@@ -1,27 +1,78 @@
-name: QA Pipeline
+FoodFlow QA Project
 
-on:
-  push:
-    branches:
-      - main
+Central de Operações QA da plataforma FoodFlow.
 
-jobs:
-  tests:
+Projeto acadêmico focado em Quality Assurance, automação de testes, testes funcionais, testes de API e integração contínua.
 
-    runs-on: ubuntu-latest
+---
 
-    steps:
+Objetivo
 
-      - name: Checkout
-        uses: actions/checkout@v4
+Garantir qualidade, estabilidade e confiabilidade da aplicação FoodFlow através de:
 
-      - name: Setup Node
-        uses: actions/setup-node@v4
-        with:
-          node-version: 20
+- Testes Funcionais
+- Testes Automatizados
+- Testes de API
+- Testes de Regressão
+- Pipeline CI/CD
+- Gestão de Bugs
+- Evidências QA
 
-      - name: Instalar Dependências
-        run: npm install
+---
 
-      - name: Executar Cypress
-        run: npx cypress run
+Funcionalidades Testadas
+
+- Login
+- Cadastro de restaurantes
+- Carrinho de compras
+- Pedidos online
+- Rastreamento de pedidos
+- Gestão de entregas
+- Dashboard administrativo
+- Relatórios
+
+---
+
+Tecnologias Utilizadas
+
+- Cypress
+- Selenium
+- Postman
+- GitHub Actions
+- JavaScript
+- Node.js
+
+---
+
+Estrutura do Projeto
+
+cypress/      # Testes automatizados
+docs/         # Documentação QA
+postman/      # Testes de API
+reports/      # Relatórios
+selenium/     # Scripts Selenium
+
+---
+
+Pipeline QA
+
+Fluxo automatizado:
+
+Commit → Build → Testes → Relatórios
+
+---
+
+Métricas QA
+
+- Cobertura QA: 92%
+- Automação: 78%
+- Testes Executados: 148
+- Bugs Críticos: 2
+
+---
+
+Autor
+
+Estéfany Ferreira Ramos da Cunha
+
+RA: 60057
