@@ -6,13 +6,13 @@ on:
       - main
 
 jobs:
-  tests:
+  cypress-run:
 
     runs-on: ubuntu-latest
 
     steps:
 
-      - name: Checkout
+      - name: Checkout Repository
         uses: actions/checkout@v4
 
       - name: Setup Node
@@ -20,8 +20,8 @@ jobs:
         with:
           node-version: 20
 
-      - name: Instalar Dependências
+      - name: Install Dependencies
         run: npm install
 
-      - name: Executar Cypress
+      - name: Run Cypress Tests
         run: npx cypress run
