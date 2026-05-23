@@ -6,6 +6,10 @@ module.exports = defineConfig({
 
     baseUrl: 'https://example.com',
 
+    video: false,
+
+    screenshotOnRunFailure: false,
+
     setupNodeEvents(on, config) {
 
     },
